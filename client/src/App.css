@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+  min-width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    /* animation: App-logo-spin infinite 20s linear; */
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* CSS BEGIN */
+@media screen and (min-width: 300px) {
+.spread-menu-container {
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 100vw;
+  align-items: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-bottom: outset 2px rgba(135, 206, 250, 0.5);
+}
+
+.spread-menu-home {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spread-menu-logo {
+  background: rgba(135, 206, 250, 0.25);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), inset 0 0 50px #000;
+  max-width: 85%;
+  padding-top: 8px;
+  text-align: center;
+  border: inset 2px rgba(19, 189, 219, 0.5);
+}
+.spread-menu-logo img {
+  max-width: 100%;
+}
+
+.spread-menu-nav {
+  width: 82%;
+  box-shadow: inset 10px 0 10px 5px #222;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  backdrop-filter: blur(4px);
+}
+
+
+
+.main-nav-container {
+  /* box-shadow: inset 10px 0 10px 5px red; */
+  overflow-x: scroll;
+  background: rgba(135, 206, 250, 0.25);
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: ease-out 0.5s;
+}
+.main-nav-container:hover {
+  background: rgba(135, 206, 250, 0.35);
+  transition: ease-in 0.3s;
+}
+.main-nav-container>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main-nav-container>ul>li {
+  list-style: none;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-nav-container>ul>li:first-of-type {
+  padding-left: 0;
+}
+.main-nav-container>ul>li:last-of-type {
+  padding-right: 8px;
+}
+.main-nav-container>ul>li>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+}
+
+/* TABLET ------  CSS BEGIN */
+@media screen and (min-width: 700px) {
+  .main-nav-container {
+    background: purple;
+  }
+}
+
+
+
+/* PC/LAPTOP ------  CSS BEGIN */
+@media screen and (min-width: 1025px) {
+  
+  .main-nav-container {
+    background: lime;
+  }
+}
+
+
+
+
+/* TV/ULTRAWIDE ------  CSS BEGIN */
+@media screen and (min-width: 1800px) {
+  .main-nav-container {
+    background: magenta;
+  }
+}
